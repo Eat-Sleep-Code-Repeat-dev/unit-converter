@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Unit Converter</title>
+</head>
+<body>
+    <main>
+        
+        
+        <header class="hero">
+                <div class="container">
+                    <nav>
+                        <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </nav>
+                <div>
+                        <h1>Metric/Imperial Unit Conversion</h1>
+                        <input id="num-input"  type="text">
+                    </div>
+
+                    <div class="hero-child">
+                        <button id="convert-btn" onclick="convertMeasurements()">Convert</button>
+                        
+                    </div>
+                </div>
+        </header>
+        <section class="sections" id="sections">
+            <div class="container">
+                <div class="measurements">
+                    <h3>Length (Meter/Feet)</h3>
+                    <p id="lengthConv"></p>
+                </div>
+                <div class="measurements">
+                    <h3>Volume (Liters/Gallons)</h3>
+                    <p id="volumeConv"></p>
+                </div>
+                <div class="measurements">
+                    <h3>Mass (Kilograms/Pounds)</h3>
+                    <p id="massConv"></p>
+                </div>
+            </div>
+        </section>
+        
+        
+            
+        
+        
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
